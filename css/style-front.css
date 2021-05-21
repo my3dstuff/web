@@ -111,21 +111,22 @@ background-image: url('../img/slider/s5.jpg');
     text-decoration: none;
     z-index: 2;
     border: var(--border-col) solid 4px;
-    margin: 0.25rem;
+    border-radius: 0.25rem;
+    margin: 0.1rem;
     
 
 }
 .card {
     background-color: var(--card-col);
-    width: 16rem;
-    height: 22rem;
-    margin: 0.75rem;
+    width: 14rem;
+    height: 21rem;
+    margin: 0.1rem;
     border-radius: 0.4rem;
-    padding: 0.75rem;
+    padding: 1rem;
     overflow: hidden;
 }
 .img-card {
-    height: 8rem;
+    height: 7rem;
     margin-bottom: 0.75rem;
     background-size: cover;
     border-radius: 0.25rem;
@@ -310,6 +311,122 @@ footer {
 .footer-sitelink {
     color: var(--font-highlight);
 }
+
+@media only screen and (max-width: 3900px) {
+    .main {
+        padding-top: 1000px;
+    }
+
+}
+
+@media only screen and (max-width: 3300px) {
+    .main {
+        padding-top: 700px;
+    }
+
+}
+
+@media only screen and (max-width: 2500px) {
+    .main {
+        padding-top: 640px;
+    }
+
+}
+
+@media only screen and (max-width: 2000px) {
+    .main {
+        padding-top: 500px;
+    }
+
+}
+@media only screen and (max-width: 1600px) {
+    .main {
+        padding-top: 366px;
+    }
+    .mybrand > img {
+        max-width: 82%;
+        height: auto;
+    }
+    .container-2 {
+        padding: 1rem 1rem 1rem 1rem;   
+    }
+}
+
+@media only screen and (max-width: 1460px) {
+    .external-links {
+        min-width: 260px;
+    }
+
+}
+
+@media only screen and (max-width: 1120px) {
+    .external-links {
+        min-width: 320px;
+    }
+    .article-container img {
+        padding: 0 1.5rem 0.5rem 0;
+        width: 248px;
+        height: 140px;
+    
+    }
+
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    background-color: var(--content-col);
+}
+.border-footer {
+    border: var(--border-col) solid 2px;
+    padding: 1rem;
+    margin: 1rem;
+    height: auto;
+    width: 85%;
+    min-height: 200px;
+    border-radius: 0.4rem;
+    text-align: center; 
+}
+.footer-img img {
+    width: 240px;
+    height: auto;
+}
+.footer-site-url {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--font-highlight);
+}
+
+.nav-sitemap {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-sitemap li a{
+    font-size: 1rem;
+    color:var(--white1);
+}
+
+.nav-sitemap ul {
+    width: 100%;
+    list-style: none;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    border: var(--border-col) solid 2px;
+}
+
+.nav-sitemap li {
+    flex: 1;
+    padding: 0 2.5rem 0 2.5rem;
+    /* overflow: hidden; */
+    white-space: nowrap;
+}
+
+
 
 
 
