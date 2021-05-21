@@ -1,5 +1,5 @@
 :root {
-    --font-highlight: orangered;
+    --font-highlight: rgb(238, 72, 12);
     --header-color: rgb(15, 15, 15);
     --body-bg: rgb(30, 30, 30);
     --white1: rgb(204, 204, 204);
@@ -11,40 +11,34 @@
     --content-col: rgb(20, 20, 20);
     --border-col: rgb(34, 34, 34)
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     background-color: var(--body-bg);
     color: var(--white1);
 }
-
 header {
     height: 140px;
     background-color: var(--header-color);
 }
-
 .header-image img{
     padding-top: 1rem;
     padding-left: 4rem;
     width: 420px;
-    /* display: flex; */
 }
-
 .navigation li a {
-    color: white;
+    color: var(--white1);
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 1px;
     text-decoration: none;
-    background: var(--body-bg);
-    padding: 12px 4px;
+    background: var(--dk-grey);
+    padding: 12px 2px;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -52,31 +46,23 @@ header {
     white-space: nowrap;
     border-radius: 0.25rem;
  }
-
  .navigation li a:hover {
      background-color: var(--font-highlight);
+     color: white;
  }
-
  .navigation ul { 
-    width: 50%;
+    width: 40%;
     list-style: none;
     margin: -3rem 6rem 0 0;
-    padding: 0;
+    padding: 0.5rem;
     display: flex;
     float: right;
+    border: var(--border-col) solid 2px;
 }
-
 .navigation li {
     flex: 1;
     padding: 0 0.25rem 0 0.25rem;
-    }
-
-
-
-
-
-
-
+}
 .main-disclaimer {
     display: flex;
     flex-wrap: wrap;
@@ -85,14 +71,12 @@ header {
     justify-content: center;
     margin: 1rem;
 }
-
 .disc-container {
     display: flex;
     width: 85%;
     flex-wrap: wrap;
     background-color: var(--content-col);
 }
-
 .disc-border {
     border: var(--border-col) solid 2px;
     padding: 1rem;
@@ -104,9 +88,7 @@ header {
     text-align: center;
     font-size: 3.2rem;
     color: var(--font-highlight);
-
 }
-
 .text-disclaimer {
     padding: 4rem 10rem;
     text-align: left;
@@ -115,27 +97,22 @@ header {
     font-size: 1.75rem;
     padding-top: 1rem;
 }
-
-
 .text-disclaimer p {
     color: var(--white2);
     font-size: 1.5rem;
     padding: 0.75rem 0 0.75rem 0;
 }
-
 .text-disclaimer > p > a {
     color: var(--font-highlight)
-
 }
-
 @media only screen and (max-width: 960px) {
     .text-disclaimer {
       padding: 2rem;
     }    
   }
-
 @media only screen and (max-width: 1200px) {
     .navigation ul {
+        width: 60%;
         flex-wrap: wrap;
         margin: 0rem 6rem 0 0;
     }
@@ -143,38 +120,31 @@ header {
         flex: 1 1 50%;
     }
     header {
-        height: 280px;
+        height: 300px;
     }
 }
-
 @media only screen and (max-width: 540px) {
     .navigation ul {
-        /* flex-wrap: wrap; */
         margin: 0 0 0 0;
         width: 100%;
         display: inline-block;
-
     }
     .navigation li {
         flex-basis: 100%;
-
     }
     header {
         height: 420px;
     }
-
     .header-image img{
         width: 340px;
         margin: 0;
         padding: 1rem 0 0 0;
         flex-basis: 100%;
     }
-
     .disc-container {
         margin-top: 1rem;
         width: 100%;
     }
-
     .disc-border {
         border: var(--border-col) solid 2px;
         padding: 0 0 0 0;
@@ -185,24 +155,16 @@ header {
     .disc-border h1 {
         margin-top: 2rem;
     }
-
     .main-disclaimer {
         margin: 1rem 0 1rem 0;
     }
-
 }
-
-
-
-
-
 footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
     background-color: var(--content-col);
 }
-
 .border-footer {
     border: var(--border-col) solid 2px;
     padding: 1rem;
@@ -211,15 +173,12 @@ footer {
     width: 85%;
     min-height: 200px;
     border-radius: 0.4rem;
-    text-align: center;
-    
+    text-align: center; 
 }
-
 .footer-img img {
     width: 240px;
     height: auto;
 }
-
 .footer-sitelink {
     color: var(--font-highlight);
 }

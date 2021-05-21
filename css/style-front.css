@@ -101,6 +101,8 @@ background-image: url('../img/slider/s5.jpg');
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 1rem;
+
 }
 
 /* =========  CARDS START  ============= */
@@ -108,18 +110,22 @@ background-image: url('../img/slider/s5.jpg');
     color: var(--white1);
     text-decoration: none;
     z-index: 2;
+    border: var(--border-col) solid 4px;
+    margin: 0.25rem;
+    
+
 }
 .card {
     background-color: var(--card-col);
-    width: 18rem;
-    height: 24rem;
+    width: 16rem;
+    height: 22rem;
     margin: 0.75rem;
     border-radius: 0.4rem;
     padding: 0.75rem;
     overflow: hidden;
 }
 .img-card {
-    height: 12rem;
+    height: 8rem;
     margin-bottom: 0.75rem;
     background-size: cover;
     border-radius: 0.25rem;
